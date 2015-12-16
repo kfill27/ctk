@@ -15,14 +15,18 @@
 
 /* Mission Section */
 
-#mission-header {
+#first-section {
   text-align: center !important;
+  text-transform: uppercase;
+  color: #fff;
+  background: #333;
 }
 
 /* Board of Directors Section */
 .demo-card-square.mdl-card {
   width: 300px;
   height: 300px;
+  padding: 3%;
 }
 .demo-card-square > .mdl-card__title {
   color: #fff;
@@ -33,3 +37,10 @@
 /* Contact Section */
 
 /* Footer */
+.mdl-mini-footer {
+  background-color: #eee;
+}
+
+.footer-address {
+  float: right;
+}
