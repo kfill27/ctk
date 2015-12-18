@@ -1,6 +1,14 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+  font-family: 'ProximaNova-Light';
+}
+
+h1 {
+  font-family: 'ProximaNova-Bold';
+}
 /* Navigation Bar */
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
