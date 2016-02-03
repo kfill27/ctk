@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :posts
   root 'welcome#index'
 
-  get 'welcome/resources' => 'welcome#index', :path => 'resources'
+  get 'welcome/resources' => 'welcome#resources', :path => 'resources'
 
   get 'welcome/mission' => 'welcome#mission', :path => 'mission'
   # The priority is based upon order of creation: first created -> highest priority.
