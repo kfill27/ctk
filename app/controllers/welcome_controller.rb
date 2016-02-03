@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
-  def index
+  def resources
+  end
+
+  def mission
   end
 end

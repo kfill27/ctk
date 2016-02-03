@@ -11,8 +11,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= render 'layouts/header' %>
+  <main class="mdl-layout__content">
 
 <%= yield %>
-
+  </main>
+  <%= render 'layouts/footer' %>
 </body>
 </html>

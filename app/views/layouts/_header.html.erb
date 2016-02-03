@@ -7,22 +7,18 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Mission</a>
-        <a class="mdl-navigation__link" href="">Resources</a>
-        <a class="mdl-navigation__link" href="">Contact</a>
-        <!-- <a class="mdl-navigation__link" href="">Link</a> -->
+        <%= link_to 'Mission', welcome_mission_path, class: 'mdl-navigation__link' %>
+        <%= link_to 'Resources', welcome_resources_path, class: 'mdl-navigation__link' %>
+        <%= link_to 'Contact', root_path, class: 'mdl-navigation__link' %>
       </nav>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <%= image_tag 'Creative-Tech-Kids.png', class: 'mdl-layout-title' %>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Mission</a>
-      <a class="mdl-navigation__link" href="">Resources</a>
-      <a class="mdl-navigation__link" href="">Contact</a>
-      <!-- <a class="mdl-navigation__link" href="">Link</a> -->
+      <%= link_to 'Mission', welcome_mission_path, class: 'mdl-navigation__link' %>
+      <%= link_to 'Resources', welcome_resources_path, class: 'mdl-navigation__link' %>
+      <%= link_to 'Contact', root_path, class: 'mdl-navigation__link' %>
     </nav>
   </div>
-  <main class="mdl-layout__content">
-  </main>
 </div>
