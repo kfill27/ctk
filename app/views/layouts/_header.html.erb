@@ -11,6 +11,11 @@
         <%= link_to 'Blog', posts_path, class: 'mdl-navigation__link' %>
         <%= link_to 'Resources', welcome_resources_path, class: 'mdl-navigation__link' %>
         <%= link_to 'Contact', root_path, class: 'mdl-navigation__link' %>
+        <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <% else %>
+          <%= link_to('Login', new_user_session_path)  %>
+        <% end %>
       </nav>
     </div>
   </header>
