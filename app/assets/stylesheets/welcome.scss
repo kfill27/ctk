@@ -10,17 +10,16 @@ h1 {
   font-family: 'ProximaNova-Bold';
 }
 /* Navigation Bar */
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: #333333;
-}
-.mdl-layout-title {
-  height: 50px;
-}
-.mdl-navigation__link {
-  color: #333333 !important;
+.nav-wrapper{
+  background: #fff;
+  a {
+    color: #333;
+  }
 }
 
+.brand-logo {
+  height: 50px;
+}
 /* Footer */
 .mdl-mini-footer {
   background-color: #eee;
