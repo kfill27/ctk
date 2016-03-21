@@ -14,21 +14,21 @@
  *= require_self
  */
 
-$pink: #ffffff;
-$pink: #ffffff;
-$pink: #ffffff;
-
-
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-main {
-  flex: 1 0 auto;
-  padding-top: 70px;
+.container {
+  width: 90%;
+  margin: 0;
 }
+
+// main {
+//   flex: 1 0 auto;
+//   padding-top: 70px;
+// }
 
 h1 {
   text-align: center;

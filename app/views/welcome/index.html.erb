@@ -1,14 +1,19 @@
+<section>
+  <h1>What is Creative Tech Kids?</h1>
+  <p>
+    We are a registered non-profit organization that partners with public libraries to make technology education accessible to all children. 
+  </p>
 
-<div class="">
-  <h1>Coming Soon!</h1>
-</div>
 
-<div class="container">
+</section>
+
+<section>
+  <h1>Check out what we've been up to</h1>
   <div class="row">
     <% @instagram.each do |instagram| %>
-    <div class="col m3">
+    <div class="col m4">
       <%= image_tag instagram.images.standard_resolution.url %>
     </div>
     <% end %>
   </div>
-</div>
+</section>
