@@ -2,3 +2,13 @@
 <div class="">
   <h1>Coming Soon!</h1>
 </div>
+
+<div class="container">
+  <div class="row">
+    <% @instagram.each do |instagram| %>
+    <div class="col m3">
+      <%= image_tag instagram.images.standard_resolution.url %>
+    </div>
+    <% end %>
+  </div>
+</div>
