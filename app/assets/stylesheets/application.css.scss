@@ -14,24 +14,20 @@
  *= require_self
  */
 
+ $blue: #29BAB0;
+ $pink: #EB608B;
+ $green: #91C548;
+ $yellow: #FCBE54;
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-// .container {
-//   width: 90%;
-//   margin: 0;
-// }
-
-// main {
-//   flex: 1 0 auto;
-//   padding-top: 70px;
-// }
-
 h1 {
   text-align: center;
+  color: $green;
 }
 
 .resource {
