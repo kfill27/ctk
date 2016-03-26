@@ -16,6 +16,16 @@
 
 @import 'variables';
 
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: font-url('ProximaNova-Bold.ttf')
+}
+
+ @font-face {
+  font-family: "ProximaNova-Light";
+  src: font-url('ProximaNova-Light.ttf');
+}
+
 body {
   font-family: 'ProximaNova-Light';
 }
