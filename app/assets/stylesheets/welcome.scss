@@ -2,13 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-  font-family: 'ProximaNova-Light';
-}
+@import 'variables';
 
-h1 {
-  font-family: 'ProximaNova-Bold';
-}
+
+
 /* Navigation Bar */
 .nav-wrapper{
   background: #fff;
@@ -20,6 +17,30 @@ h1 {
 .brand-logo {
   height: 50px;
 }
+
+/* Welcome Jumbotron */
+.background {
+  background: url(https://images.unsplash.com/photo-1453847668862-487637052f8a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7e975fe2069f0d7d1e657b7a5efb718d);
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+  top: 50;
+  left: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+
+  h1, h4 {
+    color: white;
+  }
+
+  .welcome-container {
+    padding: 100px 0 200px 0;
+    background: $green;
+  }
+}
+
+
 /* Footer */
 .mdl-mini-footer {
   background-color: #eee;

@@ -14,18 +14,14 @@
  *= require_self
  */
 
- $blue: #29BAB0;
- $pink: #EB608B;
- $green: #91C548;
- $yellow: #FCBE54;
+@import 'variables';
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  font-family: 'ProximaNova-Light';
 }
 
 h1 {
+  font-family: 'ProximaNova-Bold';
   text-align: center;
   color: $green;
 }
