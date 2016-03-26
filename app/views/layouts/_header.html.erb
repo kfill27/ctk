@@ -5,8 +5,8 @@
     <% end %>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><%= link_to 'Blog', posts_path, class: 'mdl-navigation__link' %></li></li>
-      <li><%= link_to 'Contact', root_path, class: 'mdl-navigation__link' %></li>
       <li><%= link_to 'Resources', welcome_resources_path, class: 'mdl-navigation__link' %>
+      <li><%= link_to 'Contact', root_path, class: 'mdl-navigation__link' %></li>
       <li>
         <% if user_signed_in? %>
           <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
