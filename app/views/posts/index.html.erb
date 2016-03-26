@@ -7,7 +7,7 @@
       <%= link_to (post) do %>
        <h3><%=post.title %></h3>
        <% end %>
-      <p><%= post.content %></p>
+      <p><%= markdown post.content %></p>
     </div>
   </div>
   <% end %>
