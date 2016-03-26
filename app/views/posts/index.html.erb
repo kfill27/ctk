@@ -1,10 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Creative Tech Kids Blog</h1>
-<div class="col s1">
   <% @posts.each do |post| %>
-    <h3><%= post.title %></h3>
-    <p><%= post.content %></p>
-    <%= link_to 'Show', post %>
-</div>
+  <div class="row">
+    <div class="blog-post col m8 offset-m2">
+      <%= link_to (post) do %>
+       <h3><%=post.title %></h3>
+       <% end %>
+      <p><%= post.content %></p>
+    </div>
+  </div>
   <% end %>
