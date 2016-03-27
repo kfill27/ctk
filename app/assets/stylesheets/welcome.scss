@@ -41,6 +41,23 @@
   }
 }
 
+.relative-container {
+  position: relative;
+}
+/* Second Section */
+.section-2-background {
+  position: static;
+}
+
+.icon-section-background {
+  display: inline-flex;
+  flex-direction: row;
+  height: 200px;
+  max-width: 200px;
+  border-radius: 50%;
+  background: $pink;
+  color: white;
+}
 
 /* Footer */
 .mdl-mini-footer {

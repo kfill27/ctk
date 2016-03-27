@@ -2,7 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.blog-post {
-  background: green;
+@import 'variables';
+
+div .blog-post {
+  background: $yellow;
   padding: 20px;
+  margin: 0 20px;
 }

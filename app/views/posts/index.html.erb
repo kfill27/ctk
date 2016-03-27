@@ -1,3 +1,4 @@
+<div class="">
 <p id="notice"><%= notice %></p>
 
 <h1>Creative Tech Kids Blog</h1>
@@ -7,7 +8,8 @@
       <%= link_to (post) do %>
        <h3><%=post.title %></h3>
        <% end %>
-      <p><%= markdown post.content %></p>
+      <p><%= markdown(truncate(post.content, length: 250, omission: '...Read More')) %></p>
     </div>
   </div>
   <% end %>
+</div>
