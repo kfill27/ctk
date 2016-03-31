@@ -44,6 +44,11 @@ h1 {
   }
 }
 
+.header-navigation li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .brand-logo {
   height: 50px;
 }
@@ -54,7 +59,26 @@ footer.page-footer {
   background-color: #fff;
 }
 
+.social-media li {
+  padding: 5px 5px;
+  // margin: 0 2.5px;
+  display: inline;
+  background: $pink;
+  border-radius: 50%;
+
+  a {
+  color: #fff;
+  }
+}
+
 address {
   margin-right: 2em;
-  margin-bottom: 2em;
+  margin-bottom: .75em;
+}
+
+// Media Queries
+@media (max-width: 667px) {
+  .header-navigation {
+    width: 100%;
+  }
 }

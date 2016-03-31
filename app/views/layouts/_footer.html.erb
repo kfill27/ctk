@@ -3,20 +3,39 @@
       <%= link_to root_path do %>
         <%= image_tag 'Creative-Tech-Kids.png', class: 'brand-logo' %>
       <% end %>
+      <ul>
+        <li>
+          <% if user_signed_in? %>
+            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+          <% else %>
+            <%= link_to('Login', new_user_session_path)  %>
+          <% end %>
+        </li>
+      </ul>
     </div>
     <div class="right">
-      <%= link_to 'https://www.facebook.com/creativetechkids/' do %>
+      <ul class="social-media list-inline">
+      <li>
+        <%= link_to 'https://www.facebook.com/creativetechkids/' do %>
         <i class="fa fa-facebook"></i>
       <% end %>
+      </li>
+      <li>
       <%= link_to 'https://twitter.com/creativetechkid' do %>
         <i class="fa fa-twitter"></i>
       <% end %>
+      </li>
+      <li>
       <%= link_to 'https://www.instagram.com/creativetechkids/' do %>
         <i class="fa fa-instagram"></i>
       <% end %>
+      </li>
+      <li>
       <%= link_to 'https://www.pinterest.com/creativetechkid/' do %>
         <i class="fa fa-pinterest"></i>
       <% end %>
+      </li>
+      </ul>
       <br/>
       <address>
       Creative Tech Kids, Inc.<br>

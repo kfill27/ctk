@@ -38,6 +38,12 @@
   position: static;
 }
 
+h5 {
+  color: $blue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .icon-section-background {
   display: inline-flex;
   justify-content: center;
